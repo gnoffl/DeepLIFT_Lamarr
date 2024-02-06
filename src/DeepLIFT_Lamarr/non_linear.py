@@ -282,7 +282,6 @@ def get_pos_neg_contributions_linear(dl, layer_name: str) -> Tuple[torch.Tensor,
     pos_input_mask = input_values > 0
     neg_input_mask = input_values < 0
     # if the current layer is the input layer, the contributions are just the input values
-    # todo: test this case
     if layer_name == "input":
         pos_contributions = input_values * pos_input_mask
         neg_contributions = input_values * neg_input_mask
@@ -471,8 +470,8 @@ def get_pos_neg_contributions(dl, previous_layer_name: str, current_layer_name: 
         del_x_plus = dl.model.get_layer(previous_layer_name)(del_x_plus)
         del_x_minus = dl.model.get_layer(previous_layer_name)(del_x_minus)
         return del_x_plus, del_x_minus
-    # todo: update list of accepted layers and error message!
-    raise ValueError(f"layer must be linear or conv! Given was layer name \"{previous_layer_name}\" with original"
+    raise ValueError(f"layer must be linear, conv, maxpool, avgpool, Flatten, ReLU, Sigmoid or Dropout!"
+                     f"Given was layer name \"{previous_layer_name}\" with original"
                      f"name \"{previous_layer.original_name}\"")
 
 
