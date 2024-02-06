@@ -166,4 +166,5 @@ cython_debug/
 /.idea/inspectionProfiles/Project_Default.xml
 /.idea/vcs.xml
 /tests/data/*
+/tests/saved_networks/*
 
