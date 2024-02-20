@@ -3,3 +3,4 @@ torchvision
 torchaudio
 tensorflow
 scikit-learn
+DeepLIFT_Lamarr
