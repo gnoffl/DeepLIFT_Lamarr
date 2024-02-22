@@ -833,7 +833,8 @@ def get_bigger_sequential_linear_trained(training_set: MinDataSetFCNN = None, re
         base_string = "sequential_non_linear"
     else:
         base_string = "sequential_linear"
-    with open(f'saved_networks/{base_string}_training_set.pkl', 'wb') as f:
+    file_path = os.path.dirname(os.path.abspath(__file__))
+    with open(os.path.join(file_path, "saved_networks", f"{base_string}_training_set.pkl"), 'wb') as f:
         pickle.dump(training_set, f)
     save_model(net, base_string)
     return net, training_set
