@@ -18,8 +18,8 @@ output. The following example shows how to use the _DeepLiftClass_ class:
 ```python
 import torch
 import torch.nn as nn
-import Deeplift.Deeplift_new.deeplift as deeplift
-import Deeplift.Deeplift_new.parsing as parsing
+import src.deeplift.deeplift as deeplift
+import src.deeplift.parsing as parsing
 
 my_model = nn.Sequential(
     nn.Linear(10, 20),
@@ -32,6 +32,8 @@ explainer = deeplift.DeepLiftClass(model=parsing.SequentialLoadedModel(torch.jit
 explanations, _ = explainer.attribute(torch.ones(1, 10))
 print(explanations)
 ```
+
+A corresponding example can be found in _deeplift/example.py_.
 
 ## Current restrictions
 
