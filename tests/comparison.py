@@ -413,7 +413,8 @@ def get_MNIST_avgs(loader: torch.utils.data.DataLoader) -> torch.Tensor:
     Returns:
         the average input as a Tensor
     """
-    save_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "tests", "saved_networks", "MNIST_avgs.pkl")
+    networks_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "saved_networks")
+    save_path = os.path.join(networks_path, "MNIST_avgs.pkl")
     if not os.path.exists(save_path):
         for i, (data, target) in enumerate(loader):
             if i == 0:
@@ -423,6 +424,8 @@ def get_MNIST_avgs(loader: torch.utils.data.DataLoader) -> torch.Tensor:
             data_sum = data.sum(dim=0, keepdim=True)
             avgs += data_sum
         avgs /= len(loader.dataset)
+        if not os.path.exists(networks_path):
+            os.mkdir(networks_path)
         with open(save_path, "wb") as f:
             pickle.dump(avgs, f)
     else:
