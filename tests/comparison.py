@@ -1,13 +1,14 @@
 import os.path
 from typing import Dict, List, Tuple
-from deeplift import deeplift as dl
 import tests.regression_models as regression_models
 import tests.models as models
-from deeplift import parsing
 from captum.attr import DeepLift
 import pickle
 import torch
 import math
+
+import deeplift.parsing as parsing
+import deeplift.deeplift as dl
 
 
 class ComparisonResult:

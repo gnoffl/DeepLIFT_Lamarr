@@ -1,7 +1,8 @@
 import torch
 import torch.nn as nn
 from typing import Tuple
-from deeplift import constants
+
+import deeplift.constants as constants
 
 
 def get_max_unpool_layers(current_layer: torch.jit._script.RecursiveScriptModule) -> (

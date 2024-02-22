@@ -1,15 +1,16 @@
 from typing import Tuple, Dict, Callable, List
 import torch
 import warnings
-from deeplift import parsing as ps
-from deeplift import non_linear
-from deeplift import utils
-from deeplift import flatten
-from deeplift import maxpool
-from deeplift import linear
-from deeplift import convolution
-from deeplift import loss
-from deeplift import avgpool
+
+import deeplift.parsing as ps
+import deeplift.non_linear as non_linear
+import deeplift.utils as utils
+import deeplift.flatten as flatten
+import deeplift.maxpool as maxpool
+import deeplift.linear as linear
+import deeplift.convolution as convolution
+import deeplift.loss as loss
+import deeplift.avgpool as avgpool
 
 
 class DeepLiftClass:

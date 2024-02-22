@@ -1,7 +1,8 @@
 import torch
 from typing import Tuple
-from deeplift import utils
-from deeplift import constants
+
+import deeplift.utils as utils
+import deeplift.constants as constants
 
 elementwise_non_linear_layers = ["relu", "sigmoid"]
 

@@ -10,7 +10,6 @@ import os
 import pickle
 import os.path
 import torch as pt
-import torch.nn as nn
 import torch.nn.functional as F
 import tensorflow as tf
 import numpy as np

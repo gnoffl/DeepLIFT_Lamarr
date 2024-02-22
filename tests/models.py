@@ -3,7 +3,8 @@ import pickle
 import torch
 import tests.regression_models as regression_models
 import tests.classifier_models as classifier_models
-from deeplift import deeplift
+import deeplift.deeplift as deeplift
+
 
 name_to_function_dict = {
     "hidden_layer_classifier": classifier_models.get_hidden_layer_classifier,

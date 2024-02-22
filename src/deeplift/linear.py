@@ -1,6 +1,7 @@
 import torch
-from deeplift import utils
 from typing import Tuple
+
+import deeplift.utils as utils
 
 
 def linear_rule_pos_neg(dl, current_layer: torch.jit._script.RecursiveScriptModule, current_layer_name: str,

@@ -1,5 +1,5 @@
 import torch
-from deeplift import constants
+import deeplift.constants as constants
 
 
 def get_pos_neg_masks(diff_from_ref_in: torch.Tensor, weights: torch.Tensor, for_shape: torch.Tensor):
