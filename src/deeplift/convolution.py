@@ -2,7 +2,7 @@ import warnings
 import torch
 import torch.nn as nn
 from typing import Tuple
-import src.deeplift.utils as utils
+from deeplift import utils
 
 
 def set_up_conv_transpose_layer(current_layer: torch.jit._script.RecursiveScriptModule,

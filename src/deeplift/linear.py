@@ -1,5 +1,5 @@
 import torch
-import src.deeplift.utils as utils
+from deeplift import utils
 from typing import Tuple
 
 

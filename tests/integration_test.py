@@ -14,8 +14,8 @@ import tests.regression_models as regression_models
 import tests.classifier_models as classifier_models
 import tests.models as models
 from tests.regression_models import MinDataSetFCNN
-from src.deeplift.deeplift import DeepLiftClass
-from src.deeplift.parsing import SequentialLoadedModel
+from deeplift.deeplift import DeepLiftClass
+from deeplift.parsing import SequentialLoadedModel
 
 
 class IntegrationTests(unittest.TestCase):
