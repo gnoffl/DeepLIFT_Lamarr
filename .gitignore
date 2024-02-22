@@ -167,4 +167,5 @@ cython_debug/
 /.idea/vcs.xml
 /tests/data/*
 /tests/saved_networks/*
+/junit/*
 
