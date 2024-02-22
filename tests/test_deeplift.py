@@ -79,7 +79,8 @@ class DeepliftTests(unittest.TestCase):
 
     def pos_neg_contributions_conv_2d(self, baseline: torch.Tensor, input_tensor: torch.Tensor, weight: torch.Tensor,
                                       target_pos: torch.Tensor, target_neg: torch.Tensor):
-        explainer = models.get_explainer(model_name="super_simple_convolutional_non_linear", baseline=baseline, shap=False)
+        explainer = models.get_explainer(model_name="super_simple_convolutional_non_linear", baseline=baseline,
+                                         shap=False)
         explainer.model[0][1].weight.data = weight
         explainer.set_diff_from_ref(input_tensor)
         pos, neg = non_linear.get_pos_neg_contributions_conv(dl=explainer, layer_name=explainer.model[0][0])
