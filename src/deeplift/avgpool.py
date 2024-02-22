@@ -1,10 +1,10 @@
 import torch
-import src.DeepLIFT_Lamarr.utils as utils
+import src.deeplift.utils as utils
 from typing import Tuple, List
 from functools import reduce
 import operator
 
-from src.DeepLIFT_Lamarr import constants
+from src.deeplift import constants
 
 
 def get_attributes_avg_pool(layer: torch.jit._script.RecursiveScriptModule) -> \

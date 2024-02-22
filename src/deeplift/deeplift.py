@@ -1,15 +1,15 @@
 from typing import Tuple, Dict, Callable, List
 import torch
 import warnings
-import src.DeepLIFT_Lamarr.parsing as ps
-import src.DeepLIFT_Lamarr.non_linear as non_linear
-import src.DeepLIFT_Lamarr.utils as utils
-import src.DeepLIFT_Lamarr.flatten as flatten
-import src.DeepLIFT_Lamarr.maxpool as maxpool
-import src.DeepLIFT_Lamarr.linear as linear
-import src.DeepLIFT_Lamarr.convolution as convolution
-import src.DeepLIFT_Lamarr.loss as loss
-import src.DeepLIFT_Lamarr.avgpool as avgpool
+import src.deeplift.parsing as ps
+import src.deeplift.non_linear as non_linear
+import src.deeplift.utils as utils
+import src.deeplift.flatten as flatten
+import src.deeplift.maxpool as maxpool
+import src.deeplift.linear as linear
+import src.deeplift.convolution as convolution
+import src.deeplift.loss as loss
+import src.deeplift.avgpool as avgpool
 
 
 class DeepLiftClass:

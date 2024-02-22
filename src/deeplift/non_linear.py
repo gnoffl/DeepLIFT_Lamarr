@@ -1,7 +1,7 @@
 import torch
 from typing import Tuple
-import src.DeepLIFT_Lamarr.utils as utils
-import src.DeepLIFT_Lamarr.constants as constants
+import src.deeplift.utils as utils
+import src.deeplift.constants as constants
 
 elementwise_non_linear_layers = ["relu", "sigmoid"]
 

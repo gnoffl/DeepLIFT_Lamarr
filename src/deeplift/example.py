@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
-import src.DeepLIFT_Lamarr.deeplift as deeplift
-import src.DeepLIFT_Lamarr.parsing as parsing
+import src.deeplift.deeplift as deeplift
+import src.deeplift.parsing as parsing
 
 
 def test():

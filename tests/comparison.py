@@ -1,9 +1,9 @@
 import os.path
 from typing import Dict, List, Tuple
-import src.DeepLIFT_Lamarr.deeplift as dl
+import src.deeplift.deeplift as dl
 import tests.regression_models as regression_models
 import tests.models as models
-import src.DeepLIFT_Lamarr.parsing as parsing
+import src.deeplift.parsing as parsing
 from captum.attr import DeepLift
 import pickle
 import torch

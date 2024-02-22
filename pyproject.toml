@@ -9,7 +9,7 @@ requires = ["hatchling",
 build-backend = "hatchling.build"
 
 [project]
-name = "DeepLIFT_Lamarr"
+name = "deeplift"
 version = "0.0.1"
 authors = [
   { name="Gernot Schmitz", email="gernot.schmitz@tu-dortmund.de" },

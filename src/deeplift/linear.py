@@ -1,5 +1,5 @@
 import torch
-import src.DeepLIFT_Lamarr.utils as utils
+import src.deeplift.utils as utils
 from typing import Tuple
 
 

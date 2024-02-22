@@ -2,10 +2,10 @@ import unittest
 from typing import Tuple
 import torch
 import tests.models as models
-import src.DeepLIFT_Lamarr.non_linear as non_linear
-import src.DeepLIFT_Lamarr.flatten as flatten
-import src.DeepLIFT_Lamarr.linear as linear
-import src.DeepLIFT_Lamarr.avgpool as avgpool
+import src.deeplift.non_linear as non_linear
+import src.deeplift.flatten as flatten
+import src.deeplift.linear as linear
+import src.deeplift.avgpool as avgpool
 
 
 class DeepliftTests(unittest.TestCase):
