@@ -509,7 +509,8 @@ class IntegrationTests(unittest.TestCase):
 
     def test_simple_full_net(self):
         models.get_model("sequential_non_linear")
-        with open(os.path.join("saved_networks", "sequential_non_linear_training_set.pkl"), 'rb') as f:
+        file_path = os.path.dirname(os.path.abspath(__file__))
+        with open(os.path.join(file_path, "saved_networks", "sequential_non_linear_training_set.pkl"), 'rb') as f:
             training_set = pickle.load(f)
         training_loader = torch.utils.data.DataLoader(training_set, batch_size=4, shuffle=False)
         baseline = training_set.average_input
